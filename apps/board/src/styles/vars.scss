@@ -1,0 +1,141 @@
+html {
+  // fonts
+
+  --sans-serif: Inter, -apple-system, Segoe UI, Roboto, Helvetica Neue, Ubuntu, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  --monospace: Roboto Mono, SFMono, consolas, monaco, monospace;
+
+  // spacing
+
+  --spacing-2: 0.125rem;
+  --spacing-4: 0.25rem;
+  --spacing-8: 0.5rem;
+  --spacing-10: 0.625rem;
+  --spacing-12: 0.75rem;
+  --spacing-13: 0.8125rem;
+  --spacing-14: 0.875rem;
+  --spacing-16: 1rem;
+
+  --spacing-20: 1.25rem;
+  --spacing-21: 1.3125rem;
+  --spacing-24: 1.5rem;
+  --spacing-28: 1.75rem;
+  --spacing-32: 2rem;
+  --spacing-36: 2.25rem;
+
+  // colors
+
+  --white: white;
+  --black: black;
+  --near-white: #f0f0f0;
+  --near-black: #262626;
+
+  --dark-gray: #3d3d3d;
+  --medium-gray: #555555;
+  --gray: #6a6a6a;
+  --light-gray: #979797;
+  --lightest-gray: #b3b3b3;
+  --lighter-gray: #c7c7c7;
+  --washed-gray: #dedede;
+  --faint-gray: #ededed;
+  --fainter-gray: #fafafa;
+
+  --dark-blue: #247bc7;
+  --blue: #3c92dc;
+  --light-blue: #4aa1ed;
+  --lightest-blue: #85c1f4;
+  --washed-blue: #daecfc;
+  --faint-blue: #ecf5fd;
+  --fainter-blue: #f7fafc;
+
+  --dark-red: #c04035;
+  --red: #cc5248;
+  --light-red: #d96459;
+  --lightest-red: #e07f76;
+  --washed-red: #f7d6d4;
+  --faint-red: #fdf3f2;
+  --fainter-red: #fefbfb;
+
+  --dark-green: #3b734f;
+  --green: #478b60;
+  --light-green: #55a874;
+  --lightest-green: #82bf99;
+  --washed-green: #aed6bd;
+  --faint-green: #daece1;
+  --fainter-green: #fcfdfc;
+
+  --dark-orange: #d66610;
+
+  --dark-yellow: #d69d10;
+  --yellow: #e9ab11;
+  --light-yellow: #f2bd3b;
+  --lightest-yellow: #eeca86;
+  --washed-yellow: #f6e5c4;
+  --faint-yellow: #fcf5e9;
+  --fainter-yellow: #fefcfb;
+
+  --purple: #8474e4;
+  --fainter-purple: #f2eefa;
+  --indigo: #6976d9;
+
+  // spectrum-based color
+
+  --blue-70: hsl(208, 70%, 46%);
+  --blue-60: hsl(208, 70%, 55%);
+  --blue-50: hsl(208, 70%, 61%);
+  --blue-40: hsl(208, 70%, 67%);
+  --blue-30: hsl(208, 70%, 86%);
+  --blue-20: hsl(208, 70%, 90%);
+  --blue-10: hsl(208, 70%, 96%);
+  --blue-0: hsl(208, 70%, 98%);
+
+  --green-70: hsl(141, 20%, 46%);
+  --green-60: hsl(141, 20%, 55%);
+  --green-50: hsl(141, 32%, 61%);
+  --green-40: hsl(141, 32%, 67%);
+  --green-30: hsl(141, 32%, 82%);
+  --green-20: hsl(141, 32%, 90%);
+  --green-10: hsl(141, 32%, 96%);
+  --green-0: hsl(141, 32%, 98%);
+
+  --yellow-70: hsl(36, 90%, 46%);
+  --yellow-60: hsl(36, 90%, 55%);
+  --yellow-50: hsl(36, 90%, 61%);
+  --yellow-40: hsl(36, 90%, 67%);
+  --yellow-30: hsl(36, 90%, 86%);
+  --yellow-20: hsl(36, 90%, 90%);
+  --yellow-10: hsl(36, 90%, 96%);
+  --yellow-0: hsl(36, 90%, 98%);
+
+  --red-70: hsl(5, 56%, 46%);
+  --red-60: hsl(5, 56%, 55%);
+  --red-50: hsl(5, 62%, 61%);
+  --red-40: hsl(5, 62%, 67%);
+  --red-30: hsl(5, 62%, 88%);
+  --red-20: hsl(5, 62%, 90%);
+  --red-10: hsl(5, 62%, 96%);
+  --red-0: hsl(5, 62%, 98%);
+
+  // z-index
+
+  // semantic colors
+
+  --default-ring: 0 0 0 1px var(--washed-gray);
+  --hover-ring: 0 0 0 1px var(--lightest-blue);
+  --focus-ring: 0 0 0 1px var(--lightest-blue), 0 0 0 4px var(--washed-blue);
+  --error-ring: 0 0 0 1px var(--lightest-red), 0 0 0 4px var(--faint-red);
+  --error-default-ring: 0 0 0 1px var(--lightest-red);
+  --inset-default-ring: inset 0 0 0 1px var(--washed-gray);
+  --inset-hover-ring: inset 0 0 0 1px var(--lightest-blue);
+  --inset-focus-ring: inset 0 0 0 1px var(--lightest-blue), 0 0 0 4px var(--washed-blue);
+  --inset-error-ring: inset 0 0 0 1px var(--lightest-red), 0 0 0 4px var(--faint-red);
+  --inset-error-default-ring: inset 0 0 0 1px var(--lightest-red);
+
+  --bg-dark: var(--faint-gray);
+  --bg-background: var(--near-white);
+  --bg-dialog-box: var(--white);
+
+  --border-gray: var(--washed-gray);
+
+  --btn-border: var(--gray);
+  --btn-border-hover: var(--blue-40);
+}

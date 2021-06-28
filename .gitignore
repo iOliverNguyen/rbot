@@ -1,0 +1,9 @@
+.DS_Store*
+.idea
+.snowpack
+.vscode
+__*
+bin
+build
+build.*
+node_modules

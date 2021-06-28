@@ -1,0 +1,33 @@
+{
+  "name": "rbot-board",
+  "private": true,
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "author": "Oliver N <olvrng@gmail.com> (https://olvrng.github.io)",
+  "devDependencies": {
+    "snowpack-plugin-inliner": "^1.0.2"
+  },
+  "dependencies": {
+    "@snowpack/plugin-sass": "^1.4.0",
+    "@snowpack/plugin-svelte": "^3.7.0",
+    "@snowpack/plugin-webpack": "^2.3.1",
+    "@types/chrome": "^0.0.145",
+    "@types/dompurify": "^2.2.2",
+    "@types/tap": "^15.0.4",
+    "array-range": "^1.0.1",
+    "array-rearrange": "^2.2.2",
+    "http-server": "^0.12.3",
+    "next-pow-2": "^1.0.0",
+    "nodemon": "^2.0.7",
+    "rollup-plugin-node-polyfills": "^0.2.1",
+    "snowpack": "^3.6.1",
+    "svelte": "^3.38.3",
+    "svelte-inline-svg": "^1.0.8",
+    "svelte-preprocess": "^4.7.3",
+    "svelte-routing": "^1.6.0",
+    "tap": "^15.0.9",
+    "typedarray-pool": "^1.2.0",
+    "typescript": "^4.3.4"
+  }
+}

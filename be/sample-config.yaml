@@ -1,0 +1,6 @@
+static-path: ../apps/board/build
+http:
+  port: 8000
+messenger:
+  verify_token: randomToken
+  page_access_token: ...

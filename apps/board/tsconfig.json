@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "dom",
+      "es2020"
+    ],
+    // for import.meta.url
+    "module": "es2020",
+    // for importing node modules during test
+    "moduleResolution": "node",
+    "outDir": "build.ts",
+    "rootDir": "src",
+    // svelte requires target >= ES6
+    "target": "es2020"
+  }
+}

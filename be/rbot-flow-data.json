@@ -1,0 +1,83 @@
+{
+  "flows": [
+    {
+      "id": "1234",
+      "page_ids": [
+        "100692735610965"
+      ],
+      "nodes": [
+        {
+          "id": "001",
+          "payload": {
+            "type": "trigger:completed_order",
+            "next_id": "002"
+          }
+        },
+        {
+          "id": "002",
+          "payload": {
+            "type": "action:send_message",
+            "template": "Please tell us your experience?",
+            "quick_replies": [
+              {
+                "text": "Very good!",
+                "code": "rating_5",
+                "next_id": "003"
+              },
+              {
+                "text": "It's ok.",
+                "code": "rating_3",
+                "next_id": "003"
+              },
+              {
+                "text": "Awful!",
+                "code": "rating_1",
+                "next_id": "004"
+              }
+            ],
+            "next_id": "003"
+          }
+        },
+        {
+          "id": "003",
+          "payload": {
+            "type": "action:send_message",
+            "template": "Thank you for your response! Do you have any other suggestion?",
+            "next_id": "009"
+          }
+        },
+        {
+          "id": "004",
+          "payload": {
+            "type": "action:send_message",
+            "template": "We are so sorry about that! Our people will reach back to you soon. In the mean time, do you have any other suggestion?",
+            "next_id": "009"
+          }
+        },
+        {
+          "id": "009",
+          "payload": {
+            "type": "action:send_message",
+            "template": "Thank you for your feedback! We are really appreciated your reply!",
+            "next_id": "0"
+          }
+        },
+        {
+          "id": "104",
+          "payload": {
+            "type": "trigger:received_message",
+            "next_id": "105"
+          }
+        },
+        {
+          "id": "105",
+          "payload": {
+            "type": "action:send_message",
+            "template": "Thank you for your message. Our people will contact back to you soon.",
+            "next_id": "0"
+          }
+        }
+      ]
+    }
+  ]
+}

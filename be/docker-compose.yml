@@ -1,0 +1,20 @@
+version: '3.5'
+services:
+  postgres:
+    container_name: rbot_postgres
+    image: postgres:12
+    ports:
+    - 5432:5432
+    shm_size: 4GB
+    volumes:
+    - postgres_data:/var/lib/postgresql/data
+    - $PROJECT_DIR/be/database:/database
+    environment:
+    - POSTGRES_USER=postgres
+    - POSTGRES_PASSWORD=postgres
+    - POSTGRES_DB=test
+    - POSTGRES_DATA=/var/lib/postgresql/data/pgdata
+
+volumes:
+  postgres_data:
+    external: false

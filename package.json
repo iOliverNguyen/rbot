@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "private": true,
+  "license": "MIT",
+  "author": "Oliver N <olvrng@gmail.com> (https://olvrng.github.io)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/olvrng/rbot"
+  },
+  "workspaces": [
+    "apps/*"
+  ],
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
