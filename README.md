@@ -18,6 +18,8 @@ built with:
   [Svelte](https://svelte.dev),
   [Snowpack](https://www.snowpack.dev/)
 
+![](screenshot.png)
+
 ## Quick Start
 
 ### Local development
@@ -36,11 +38,11 @@ cd rbot/apps/board
 
 # start (in backend dir)
 cd rbot/be
-./bin/rbot-server
+./bin/rbot-server -config-file sample-config.yaml
 
 # or use go run
 cd rbot/be
-go run ./cmd/rbot-server
+go run ./cmd/rbot-server -config-file sample-config.yaml
 ```
 
 Then go to [localhost:8000](http://localhost:8000).
